@@ -1,4 +1,4 @@
-# Pension Management System
+# Pension Portal
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -32,14 +32,13 @@ The purpose of this program is to develop a system that would keep records of em
 
 ### Built With
 
-Web application is developed in Springboot with microservice architecture.Springboot has the ability to create a stand-alone application and reduce amount of code, used as backend.Microservice architecture used, that make the application scable and efficient.
+Web application is developed in Springboot with microservice architecture. Springboot have the ability to create a stand-alone application with reduce amount of code. Microservice architecture is used to make the application scalable and efficient.
 
-* Spring boot microservice architecture
-* Api gateway for centralized routing
+A brief detail of the tech stacks are below:
+* Spring boot with microservice architecture
 * Spring security for auth service
 * JWT validation for extra security
-* git
-* Run Application
+* git for version control.
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -49,10 +48,10 @@ Web application is developed in Springboot with microservice architecture.Spring
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To fetch and execute the project, follow the steps;
-Steps to pull:
-1. Pull the complete project. 
-2. Open the project on STS(Spring Tool Suit) as Maven Project.
+To fetch and execute the project, follow the steps:
+Steps to pull ->
+1. Pull or download the complete project. 
+2. Import the project on STS(Spring Tool Suit) as Maven Project.
 3. Update the project.
 4. Run the Appplication as Run as -> Spring Boot App.
 
@@ -62,12 +61,14 @@ Steps to pull:
 <!-- CONTRIBUTING -->
 ## To Contribute
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create.
+To Contribute/Add features or resolve bugs, Follow the steps below:
 
 1. Pull the Project
-2. Create your Feature Branch 
-3. Commit your Changes 
-4. Push to the Branch
-5. Open a Pull Request
+2. Create your Feature Branch. (Make a Seperate branch)
+3. Commit your Changes in the new branch. 
+4. Push to the new Branch
+5. Create a Pull Request.
+
+<b>DO NOT MAKE ANY CHANGES TO MAIN BRANCH</b>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
