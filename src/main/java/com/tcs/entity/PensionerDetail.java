@@ -9,7 +9,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 
-@Entity(name = "PENSIONR_DETAIL")
+@Entity(name = "PENSIONER_DETAIL")
 public class PensionerDetail {
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
