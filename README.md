@@ -26,6 +26,27 @@ Given the discouraging record of the traditional pension system and the limited 
 
 The purpose of this program is to develop a system that would keep records of employees or pensioners data including their pension plan, allowances, gratuity, taxes, net pay, rent pay and also calculate the pay of the pensioners taking into consideration the pensioner’s data.
 
+The Project Have the following Services:
+## PensionPortalService1 :
+This Service is connected via a common H2 DB in which ##PensionPortalService2 loads the data. The Service1 takes the Aadhar/Pan number of the user and returns some calculated amounts based on the request document. In case the Aadhar/PAM is invalid, it returns an error message.
+App will run on port: 7090
+
+## PensionPortalService2 :
+This Service loads the data into the H2 from a CSV file. It also takes Aadhar/PAN and returns the User details in case of valid data.
+App will run on port: 8090
+
+## Data in H2
+H2 can be accessed with the url: localhost:8090/h2-console
+## Add the details as:
+
+![image](https://user-images.githubusercontent.com/107387367/175063109-c7242628-7b18-4e6a-9fac-a321935700f3.png)
+
+
+## A sample data is shown below:
+
+![image](https://user-images.githubusercontent.com/107387367/175062655-d985e3e5-4497-493f-98a2-043e2c7a7eaf.png)
+
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
