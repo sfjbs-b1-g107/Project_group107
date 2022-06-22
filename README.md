@@ -30,6 +30,8 @@ The Project Have the following Services:
 ## PensionPortalService1 :
 This Service is connected via a common H2 DB in which ##PensionPortalService2 loads the data. The Service1 takes the Aadhar/Pan number of the user and returns some calculated amounts based on the request document. In case the Aadhar/PAM is invalid, it returns an error message.
 App will run on port: 7090
+## Note: Since the database is common for service 1 and service 2, we need to deploy service 2 before service 1 otherwise service 1 throwing error while deploying H2.
+
 
 ## PensionPortalService2 :
 This Service loads the data into the H2 from a CSV file. It also takes Aadhar/PAN and returns the User details in case of valid data.
