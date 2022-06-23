@@ -70,6 +70,8 @@ A brief detail of the tech stacks are below:
 * Spring boot with microservice architecture
 * Spring security for auth service
 * JWT validation for extra security
+* Eureka for Service Registration
+* Api Gateway to route the API calls.
 * git for version control.
 
 
