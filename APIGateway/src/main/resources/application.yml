@@ -1,0 +1,20 @@
+server:
+  port: 8083
+  
+spring:
+  application:    name: APIGateway
+    
+    
+  main:
+    web-application-type: reactive
+    
+  cloud:
+    gateway:      routes:      - id: PensionService1
+        uri:          lb://PensionService1
+        predicates:        - Path=/pensionservice1/**
+        
+      - id: PensionService2        uri:
+          lb://PensionService2
+        predicates:
+        - Path=/pensionservice2/**
+     
