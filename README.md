@@ -27,6 +27,15 @@ Given the discouraging record of the traditional pension system and the limited 
 The purpose of this program is to develop a system that would keep records of employees or pensioners data including their pension plan, allowances, gratuity, taxes, net pay, rent pay and also calculate the pay of the pensioners taking into consideration the pensioner’s data.
 
 The Project Have the following Services:
+## Eureka Server: 
+Eureka server is an application that holds the information about all client-service applications. Here, Eureka Server will run on the port: 8761.
+It will hold the information for the services 1 and 2.
+
+## API Gateway:
+An API gateway is an API management tool that sits between a client and a collection of backend services. An API gateway acts as a reverse proxy to accept all application programming interface (API) calls, aggregate the various services required to fulfill them, and return the appropriate result. 
+In Simple words, the API Gateway will redirect our calls to the appropriate services.
+Here, the API Gateway will run on port 8083.
+
 ## PensionPortalService1 :
 This Service is connected via a common H2 DB in which ##PensionPortalService2 loads the data. The Service1 takes the Aadhar/Pan number of the user and returns some calculated amounts based on the request document. In case the Aadhar/PAM is invalid, it returns an error message.
 App will run on port: 7090
