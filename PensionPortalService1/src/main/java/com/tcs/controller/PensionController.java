@@ -16,7 +16,7 @@ public class PensionController {
 	@Autowired
 	private PensionService service;
 	
-	@PostMapping(value = "/ProcessPension/{id}")
+	@PostMapping(value = "/pensionservice1/ProcessPension/{id}")
 	public ResponseEntity<Object> getPensionerDetailByPAN(@PathVariable String id) {
 		System.out.println(id);
 		PensionerDetail pensioner = service.fetchPensionerDetailsByPAN(id);
