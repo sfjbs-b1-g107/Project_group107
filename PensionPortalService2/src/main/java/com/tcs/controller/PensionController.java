@@ -28,7 +28,7 @@ public class PensionController {
 	 * @return String denoting success message
 	 * @throws IOException if exception occurs during parsing csv
 	 */
-	@RequestMapping(value = "/load", method = RequestMethod.GET)
+	@RequestMapping(value = "/pensionservice2/load", method = RequestMethod.GET)
 	public String loadDataFromCSV() throws IOException {
 
 		CSVReader reader = new CSVReaderBuilder(new FileReader("src/main/resources/import.csv")).build();
@@ -59,7 +59,7 @@ public class PensionController {
 	 * @param id Aadhar/pan id
 	 * @return PensionerDetail entity
 	 */
-	@RequestMapping(value = "/PensionerDetailByAadhaar/{id}", method = RequestMethod.GET)
+	@RequestMapping(value = "/pensionservice2/PensionerDetailByAadhaar/{id}", method = RequestMethod.GET)
 	public PensionerDetail getPensionerDetailByPAN(@PathVariable String id) {
 		System.out.println(id);
 
@@ -72,7 +72,7 @@ public class PensionController {
 	 * @return
 	 * This method is added for practice.
 	 */
-	@RequestMapping(value = "/PensionerDetailByName/{name}", method = RequestMethod.GET)
+	@RequestMapping(value = "/pensionservice2/PensionerDetailByName/{name}", method = RequestMethod.GET)
 	public List<PensionerDetail> getPensionerDetailByName(@PathVariable String name) {
 		System.out.println(name);
 		return service.getPensionerDetailByName(name);
